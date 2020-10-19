@@ -17,11 +17,11 @@ for line in lines:
       words[10]=float(words[10])
       gelist.append(words)
 
-print(gelist)
+print("l=",gelist)
 f.close()
-
 f=open("OCT12.out",'w')
-for n in gelist:
-    s="{}\n" 
-    f.write(s.format(n))
+for atom in gelist:
+    
+    s="{0:6s}{1:5d}  {2:4s}{3:3s} {4:1s}{5:4d}    {6:8.3f}{7:8.3f}{8:8.3f}{9:6.2f}{10:6.2f}           {11:2s}  \n"
+    f.write(s.format(atom[0],atom[1],atom[2],atom[3],atom[4],atom[5],atom[6],atom[7],atom[8],atom[9], atom[10],atom[11]))
 f.close()
