@@ -1,0 +1,92 @@
+<! DOCTYPE html>
+<html >
+              <head>
+                             <title> Yuan Liu’s final project webpage</title>
+                             <style>
+                                           h1 {
+                                                   color:black;
+                                                }
+                                           div {
+                                                    font-family: Calibri,sans-serif;
+                                                    clear:both;
+                                                    overflow:auto;
+                                                  }
+                                            img {
+                                                height:256px;
+                                                float:left;
+                                                }
+                                            body {
+                                                       font-family: Times New Roman,san-serif;
+                                                      }
+                                            
+                                            .floating {
+                                              float:left;
+                                             }
+                                             a:link {
+                                               color:blue;
+                                             }
+                                             a:visited {
+                                             color:black;
+                                             }
+                                             a:hover {
+                                               color:magenta;
+                                             }
+                                            .article1 {
+                                             border:solid 3px;
+                                             padding:3px;
+                                             color:green;
+                                             text-align:center;
+                                             }
+                                             div.article2 {
+                                             color:green;
+                                             font-style:italic;
+                                             text-align:center;
+                                             text-indent:10px;
+                                             }
+            
+                             </style>
+               </head>
+               <body>
+                            <div class="article1">
+                            <!--This section contains two paragraphs-->
+                            <h1>This is an introduction of the background of my final project</h1>
+                            <img class="floating"src="EV for html.jpg"/>
+                            <img class="floating"src="NovaSeq6000.png"/>
+                            <p>Extracellular Vesicles (EV) is a nano-sized heterogeneous group of bi-lipid membrane vesicles that can be secreted by mesenchymal stem cells (MSC). EVs exerts similar funtion as MSC in tissue repair and tissue regeneration without those disadvantages in MSC transplatation. EV encapsulates a wide range of proteins, lipids, and nucleic acids while their bi-lipid layers facilitating cell-cell communication. MiRNA is an important group of nucleic acids due to their extensive regulation of genes expression.<b> Thus, miRNA profiling in EV is thought to be critical in tissue engineering</b>. Here are an EV sketch and the machine for miRNA sequencing. The samples for sequencing are collected from EV isolated from MSC cultured under 2D or 3D environment.</p>
+                            </div>
+                            
+                            <hr>
+                            <div class="article2">
+                            <h1> This is the visualizable results from sequencing data</h1>
+                            <image class="floating"src="heatmap.png" width=300" height="900"/>
+                            <image class="floating"src="Venn Diagram.png" width="400" height="600"/>
+                            <p>A heatmap always provides a clear and straitforward way to show the data and Venn diagram is also good at interpretating the data. After calculating p value and screening data by a threshold of fold change of 2, there are<b> 18</b> upregulated miRNAs and<b> 24</b> downregulated miRNAs according to the statistics. The<b> top 5</b> upregulated miRNAs are listed below in the table. Please go to <a href="http://www.targetscan.org/vert_72/">TargetScan</a> to perform further mRNA target prediction.</p> 
+<table align="center">
+                <tr>
+                        <td>miRNA ID</td>
+                        <td>fold change</td>
+                </tr>
+                <tr>
+                        <td>hsa-miR-6800-5p</td>
+                        <td>10.43</td>
+                </tr>
+                <tr>
+                        <td>hsa-miR-570-5p</td>
+                        <td>5.32</td>
+                </tr>
+                <tr>
+                        <td>hsa-miR-134-5p</td>
+                        <td>5.09</td>
+                </tr>
+                <tr>
+                        <td>hsa-miR-6772-5p</td>
+                        <td>4.31</td>
+                </tr>
+                <tr>
+                        <td>hsa-miR-665</td>
+                        <td>3.53</td>
+                </tr>
+</table>
+                            </div>
+                </body>
+</html>
