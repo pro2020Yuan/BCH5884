@@ -92,4 +92,14 @@ txt = '''
 fig1.text(0.05,-0.1,txt)
 plt.savefig("Venn Diagram.png",dpi=144, bbox_inches='tight')
 
-
+def operateHTML(f):
+    f.write("<html>\n")
+    f.write("<body>\n")
+    f.write("<h1> These are the visualizable results from miRNA sequencing data</h1>\n")
+    f.write('<img src = "heatmap.png">\n')
+    f.write('<img src = "Venn Diagram.png">\n')
+    f.write("</body>\n")
+    f.write("</html>\n")
+    f.close()
+f = open("Yuan Liu's final project webpage.html", 'w')
+webpage=operateHTML(f)
